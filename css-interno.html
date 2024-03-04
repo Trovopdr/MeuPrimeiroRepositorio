@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aula01</title>
+	<style>
+		.card {
+			width: 500px;
+			border: 5px solid rgb(28, 0, 59);
+			background: #0238ad;
+		}
+
+		.texto {
+			font-family: monospace;
+		}
+
+		.titulo {
+			font-size: 15px;
+		}
+
+		.paragrafo {
+			font-size: 15px;
+		}
+		.imagem{
+			width: 100px; 
+			height: 100px;
+		}
+		.color{
+			color: rgb(5, 196, 186);
+		}
+	</style>
+</head>
+
+<body>
+	<!--DIV pai-->
+	<div class="card">
+		<!--Div filhos-->
+		<div class="imagem">
+			<img class="imagem" src="https://cdn-icons-png.flaticon.com/512/706/706797.png">
+		</div>
+		<div>
+			<h1 class="titulo texto">Meu nome é <span class="color">Adriano</span></h1>
+			<p class="paragrafo texto">Mensagem: <span class="color"> A vida não é um morango</span>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aa {
+--angle: 0deg;
+width: 50vmin;
+height: 50vmin;
+border: 5px solid;
+border-image: conic-gradient(from var(--angle), rgb(24, 114, 150), rgb(0, 79, 224), rgb(8, 184, 46), aqua, blue,
+magenta, red) 1;
+
+animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+to {
+--angle: 360deg;
+}
+}
+
+@property --angle {
+syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
+	}
